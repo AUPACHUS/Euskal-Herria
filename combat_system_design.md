@@ -142,10 +142,141 @@ Considerar interacciones básicas entre elementos podría añadir profundidad:
 ---
 **Próximos Pasos:**
 1.  ~~Diseñar un arquetipo de enemigo básico para probar estas mecánicas de combate y magia.~~ (Completado)
-2.  ~~Detallar el sistema de progresión de Aitor (cómo mejora habilidades, desbloquea hechizos, estadísticas, etc.).~~ (En progreso)
-3.  Explorar el diseño de los otros personajes jugables y sus roles (Mari, Sugaar, Basajaun, Lamia) para el modo historia y competitivo.
+2.  ~~Detallar el sistema de progresión de Aitor (cómo mejora habilidades, desbloquea hechizos, estadísticas, etc.).~~ (Completado)
+3.  ~~Explorar el diseño de los otros personajes jugables y sus roles (Mari, Sugaar, Basajaun, Lamia) para el modo historia y competitivo.~~ (En progreso)
 4.  Considerar la IA básica para el "Gaizto Kume" y otros enemigos iniciales.
 5.  Esbozar el sistema de Puzzles basados en símbolos vascos.
+6.  Definir la estructura del modo competitivo (torres, súbditos, jungla si aplica).
+
+## VI. Otros Personajes Jugables (Modo Historia y Competitivo)
+
+Estos personajes serán aliados de Aitor en el Modo Historia y campeones seleccionables en el Modo Competitivo. Cada uno tendrá un rol y un conjunto de habilidades únicas.
+
+### 1. Mari - La Dama de Anboto (Maga de Control/AoE)
+
+*   **Rol Principal (Competitivo):** Maga (Control de Área, Daño Mágico Sostenido y en Ráfaga).
+*   **Rol en Modo Historia:** Poderosa aliada elemental, fuente de sabiduría sobre la magia antigua y los dioses. Podría otorgar a Aitor misiones relacionadas con el control de tormentas o la comprensión de fenómenos naturales. Quizás Aitor la encuentre en su morada en el Monte Anboto.
+*   **Recurso:** "Indar" (Poder/Fuerza, similar al Maná). Se regenera pasivamente.
+
+#### Habilidades de Mari:
+
+*   **Pasiva - Aura Tempestuosa:**
+    *   Los enemigos cercanos a Mari son ligeramente ralentizados de forma intermitente por ráfagas de viento frío. Este efecto podría intensificarse brevemente tras lanzar un hechizo.
+
+*   **Habilidad 1 - Centella Bifurcada (Tximistargi):**
+    *   **Descripción:** Mari lanza un rayo en línea recta que golpea al primer enemigo. Al impactar (o al alcanzar su rango máximo), el rayo se bifurca, golpeando a hasta dos enemigos adicionales cercanos al objetivo principal.
+    *   **Efecto:** Daño mágico. El objetivo principal recibe más daño que los secundarios.
+    *   **Uso:** Herramienta de pokeo, limpieza de oleadas (en competitivo), y daño a múltiples objetivos agrupados.
+
+*   **Habilidad 2 - Vórtice Eléctrico (Zurrunbilo Elektrikoa):**
+    *   **Descripción:** Mari crea un pequeño vórtice de viento y electricidad en una ubicación objetivo durante unos segundos.
+    *   **Efecto:** Los enemigos dentro del vórtice reciben daño mágico por segundo y son ligeramente atraídos hacia el centro.
+    *   **Uso:** Control de zona, dificulta el movimiento enemigo, sinergia con otras habilidades de área.
+
+*   **Habilidad 3 - Bendición de la Tormenta (Ekaitzaren Bedeinkapena):**
+    *   **Descripción:** Mari se envuelve a sí misma o a un aliado objetivo con la energía de una nube de tormenta.
+    *   **Efecto (en sí misma):** Otorga un escudo que absorbe daño y aumenta brevemente su velocidad de movimiento.
+    *   **Efecto (en aliado):** Otorga un escudo más pequeño al aliado. Los ataques básicos del aliado aplican daño mágico adicional por unos segundos.
+    *   **Uso:** Habilidad defensiva y de utilidad, puede usarse para escapar, iniciar un intercambio favorable, o potenciar a un carry.
+
+*   **Habilidad Última (R) - Tormenta de Hierro (Burdin Ekaitza):**
+    *   **Descripción:** Tras una breve canalización (durante la cual Mari podría ser vulnerable pero ganar armadura/resistencia mágica), invoca una devastadora tormenta de rayos en una gran área objetivo. Múltiples rayos caen aleatoriamente dentro del área durante varios segundos.
+    *   **Efecto:** Cada rayo inflige un gran daño mágico en un área pequeña. Los enemigos pueden ser golpeados por múltiples rayos si permanecen en la zona. Podría aplicar un efecto adicional como un breve aturdimiento o una ralentización severa si un enemigo es golpeado por varios rayos.
+    *   **Uso:** Habilidad de gran impacto para peleas de equipo, asedios, o para asegurar objetivos. Alto potencial de daño en área.
+
+#### Consideraciones para Mari en Modo Historia:
+*   Como aliada NPC, podría usar versiones simplificadas de estas habilidades.
+*   Podría ser fundamental para superar ciertos obstáculos ambientales relacionados con tormentas o barreras mágicas.
+*   Su encuentro y alianza con Aitor podrían ser un hito importante, quizás desbloqueando la afinidad de Aitor con el elemento Aire o mejorando sus hechizos de ese tipo.
+
+---
+**Próximos Personajes a Detallar:**
+*   ~~Sugaar (Asesino)~~ (En progreso)
+*   Basajaun (Tanque)
+*   Lamia (Soporte)
+
+### 2. Sugaar - La Serpiente de las Sombras (Asesino)
+
+*   **Rol Principal (Competitivo):** Asesino (Alto daño en ráfaga a un solo objetivo, Movilidad, Sigilo).
+*   **Rol en Modo Historia:** Una figura enigmática y peligrosa. Podría ser un antiguo espíritu o una entidad que Aitor debe ganarse o incluso someter. Quizás posea conocimientos sobre Ortzi o los Jentilak que son cruciales. Su moralidad podría ser ambigua, actuando por sus propios intereses.
+*   **Recurso:** "Pozoina" (Veneno/Toxina). Se regenera lentamente o se acumula al golpear enemigos con ciertas habilidades, fomentando un estilo de juego agresivo y continuo.
+
+#### Habilidades de Sugaar:
+
+*   **Pasiva - Toque Serpentino:**
+    *   Los ataques básicos de Sugaar y ciertas habilidades aplican acumulaciones de "Veneno de Serpiente" a los enemigos. Al alcanzar un número determinado de acumulaciones (ej: 3-4), el veneno se activa, infligiendo daño mágico adicional basado en la salud perdida del objetivo y consumiendo las acumulaciones.
+
+*   **Habilidad 1 - Embestida Furtiva (Ezkutuko Erasoa):**
+    *   **Descripción:** Sugaar se desliza rápidamente hacia adelante una corta distancia, atravesando unidades. Si golpea a un enemigo marcado por "Veneno de Serpiente", el cooldown de esta habilidad se reduce significativamente.
+    *   **Efecto:** Daño físico moderado.
+    *   **Uso:** Herramienta de movilidad para entrar y salir de combates, reposicionarse, o perseguir objetivos. La reducción de cooldown incentiva el uso coordinado con su pasiva.
+
+*   **Habilidad 2 - Manto de Sombras (Itzal Estalkia):**
+    *   **Descripción:** Sugaar se vuelve invisible por un corto periodo de tiempo y gana un aumento de velocidad de movimiento. Su siguiente ataque básico mientras está invisible o justo después de revelarse inflige daño adicional y aplica una acumulación extra de "Veneno de Serpiente".
+    *   **Efecto:** Invisibilidad, velocidad de movimiento, siguiente ataque potenciado.
+    *   **Uso:** Para emboscadas, escapar, o reposicionarse de forma segura para un ataque sorpresa.
+
+*   **Habilidad 3 - Dagas Envenenadas (Sastakai Pozoituak):**
+    *   **Descripción:** Sugaar lanza rápidamente una serie de dagas en un cono frente a él.
+    *   **Efecto:** Cada daga inflige daño físico y aplica una acumulación de "Veneno de Serpiente". Los enemigos pueden ser golpeados por múltiples dagas si están muy cerca.
+    *   **Uso:** Su principal herramienta para aplicar acumulaciones de veneno rápidamente y para daño en área cercana.
+
+*   **Habilidad Última (R) - Mordisco Letal (Heriotzaren Agina):**
+    *   **Descripción:** Sugaar se abalanza sobre un campeón enemigo objetivo, infligiendo un gran daño físico. El daño aumenta significativamente si el objetivo está por debajo de un umbral de salud (ej: 30-40%). Si esta habilidad mata al objetivo, Sugaar recupera una porción de su "Pozoina" y puede reactivar `Manto de Sombras` inmediatamente con un cooldown reducido.
+    *   **Efecto:** Alto daño a un solo objetivo, ejecución. Potencial de reinicio parcial.
+    *   **Uso:** Habilidad de ejecución para eliminar objetivos prioritarios y frágiles. El reinicio de `Manto de Sombras` le permite escapar o buscar un nuevo objetivo si tiene éxito.
+
+#### Consideraciones para Sugaar en Modo Historia:
+*   Podría ser un jefe antes de convertirse en un aliado, poniendo a prueba las habilidades de Aitor.
+*   Su conocimiento sobre venenos y tácticas de sigilo podría ser enseñado a Aitor de alguna forma (quizás desbloqueando una habilidad de sigilo rudimentaria para Aitor o la capacidad de usar venenos temporales en su espada).
+*   Su naturaleza de serpiente/dragón podría manifestarse visualmente en sus animaciones o en su forma cuando usa su habilidad última.
+
+---
+**Próximos Personajes a Detallar:**
+*   ~~Basajaun (Tanque)~~ (En progreso)
+*   Lamia (Soporte)
+
+### 3. Basajaun - El Señor del Bosque (Tanque / Guardián)
+
+*   **Rol Principal (Competitivo):** Tanque (Alta supervivencia, Control de Masas (CC), Protección de aliados).
+*   **Rol en Modo Historia:** Un antiguo guardián de los bosques, inicialmente podría ser territorial y desconfiado. Aitor podría necesitar demostrar su valía o ayudar a Basajaun a proteger su dominio de una amenaza para ganar su alianza. Podría enseñar a Aitor sobre la naturaleza, la supervivencia y quizás formas de interactuar con el entorno o criaturas del bosque.
+*   **Recurso:** "Kemena" (Vigor/Resistencia). Podría ser una barra que se llena al recibir o infligir daño, o al usar ciertas habilidades, y se gasta en otras, o simplemente tener cooldowns largos y un enfoque en la gestión de estos. Para un tanque, una opción podría ser que algunas habilidades no tengan coste pero sí cooldowns, y otras consuman "Kemena" acumulado. Optemos por cooldowns y una pasiva que le otorgue resistencia.
+
+#### Habilidades de Basajaun:
+
+*   **Pasiva - Piel de Corteza Ancestral (Azal Zaharreko Larrua):**
+    *   Basajaun posee una resistencia natural. Gana armadura y resistencia mágica adicionales basadas en un porcentaje de su salud máxima. Además, cuando no ha recibido daño durante unos segundos, regenera un pequeño porcentaje de su salud máxima por segundo.
+
+*   **Habilidad 1 - Embestida Poderosa (Oldarraldi Indartsua):**
+    *   **Descripción:** Basajaun carga hacia adelante una distancia moderada, golpeando y empujando a los enemigos en su camino. El primer campeón enemigo golpeado es brevemente aturdido.
+    *   **Efecto:** Daño físico, empuje, aturdimiento al primer campeón.
+    *   **Uso:** Herramienta de iniciación, para interrumpir enemigos o para reposicionar a un objetivo clave.
+
+*   **Habilidad 2 - Abrazo de la Tierra (Lurraren Besarkada):**
+    *   **Descripción:** Basajaun golpea el suelo con fuerza, creando una onda de choque a su alrededor.
+    *   **Efecto:** Los enemigos cercanos reciben daño físico y son ralentizados significativamente por un corto periodo. Si Basajaun tiene menos del 50% de su salud, esta habilidad también le otorga un escudo temporal basado en el número de enemigos golpeados.
+    *   **Uso:** Control de masas en área, disuasión, y supervivencia adicional cuando está bajo presión.
+
+*   **Habilidad 3 - Grito Protector (Oihu Babeslea):**
+    *   **Descripción:** Basajaun emite un potente grito que inspira a los aliados cercanos y amedrenta a los enemigos.
+    *   **Efecto:**
+        *   **Aliados:** Otorga a los aliados cercanos (incluido él mismo) un aumento temporal de armadura y resistencia mágica.
+        *   **Enemigos:** Los enemigos cercanos sufren una reducción temporal de su daño de ataque.
+    *   **Uso:** Habilidad de apoyo para proteger al equipo durante las peleas, mitigando el daño entrante y el saliente de los enemigos.
+
+*   **Habilidad Última (R) - Grito del Bosque (Basoaren Oihua):**
+    *   **Descripción:** Tras una breve canalización, Basajaun desata un rugido ensordecedor que reverbera en una gran área a su alrededor.
+    *   **Efecto:** Los campeones enemigos en el área son aturdidos durante un periodo significativo (ej: 1.5 - 2 segundos). Los súbditos y monstruos no jefes son aterrorizados (huyen). Basajaun gana un aumento considerable de tamaño y resistencias durante unos segundos después de usarla.
+    *   **Uso:** Un potente control de masas en área que puede cambiar el curso de una pelea de equipo, ideal para iniciar o para proteger a sus aliados de un ataque coordinado. El aumento de tamaño y resistencias lo hace aún más imponente.
+
+#### Consideraciones para Basajaun en Modo Historia:
+*   Aitor podría encontrarlo protegiendo un lugar sagrado del bosque, como el Bosque de Oma.
+*   Su alianza podría ser clave para navegar por zonas boscosas peligrosas o para obtener ayuda de otras criaturas del bosque.
+*   Podría enseñar a Aitor sobre la resistencia y la conexión con la tierra, quizás mejorando la habilidad `Piel de Piedra` de Aitor o dándole alguna pasiva de regeneración de salud en entornos naturales.
+
+---
+**Próximos Personajes a Detallar:**
+*   Lamia (Soporte)
 
 ## V. Sistema de Progresión de Aitor
 
